@@ -88,7 +88,7 @@ private String TAG="XXXXXXXXX";
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Message message = new Message(mMessageEditText.getText().toString());
+                Message message = new Message(mMessageEditText.getText().toString(),"122");
                 mMessageDatabaseReference.push().setValue(message);
                 mMessageEditText.setText("");
             }
