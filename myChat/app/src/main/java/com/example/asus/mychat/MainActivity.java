@@ -17,7 +17,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     // 1. Пользовательский интерфейс (UI)
@@ -78,6 +80,7 @@ private String TAG="XXXXXXXXX";
         }
         // 7. Создаем лист где будем хранить сообщения
         List<Message> messages = new ArrayList<>();
+        //Map<Message> messages = new HashMap<>();
 
         // 8. Создаем и устанавливаем Адаптер для сообщений
         mMessageAdapter = new MessageAdapter(this, R.layout.items_message, messages);
